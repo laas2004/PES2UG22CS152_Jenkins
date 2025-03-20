@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application...'
-                sh 'g++ -o YOUR_SRN-1 YOUR_SRN.cpp' // Replace YOUR_SRN with your actual SRN
+                sh 'g++ -o PES2UG22CS152-1 PES2UG22CS152.cpp' // Replace YOUR_SRN with your actual SRN
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing the application...'
-                sh './YOUR_SRN-1' // Execute the compiled C++ program
+                sh './PES2UG22CS152-1' // Execute the compiled C++ program
             }
         }
 
